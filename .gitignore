@@ -3,7 +3,6 @@
 .vs*
 *old*
 objs/
-example*
 
 ML schema
 FodyWeavers.xsd
