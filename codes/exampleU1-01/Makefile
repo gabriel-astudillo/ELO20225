@@ -31,4 +31,9 @@ clean:
 	@$(RM) $(TARGET)
 	@$(RM) -rf  $(DIR_OBJ)
 
+push: clean
+	git add .
+	git commit -m 'update'
+	git push
+
 	
