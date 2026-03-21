@@ -9,12 +9,11 @@ INCLUDES=-I./include
 LDFLAGS=-L/usr/local/lib 
 LDLIBS=
 
-CXXFLAGS=-std=c++17 -Wall -O2
+CXXFLAGS=-std=c++17 -Wall
 
 DIR_OBJ=objs
 
 SRCS=$(wildcard *.cc)
-
 OBJS=$(patsubst %.cc,$(DIR_OBJ)/%.o,$(SRCS))
 
 
@@ -28,11 +27,8 @@ $(DIR_OBJ)/%.o: %.cc
 	$(CXX) -c -o $@ $< $(CXXFLAGS) $(INCLUDES)
 
 clean:
-	@$(RM) $(OBJS)
 	@$(RM) *~ core
-
-distclean: clean
 	@$(RM) $(TARGET)
+	@$(RM) -rf  $(DIR_OBJ)
 
-.PHONY: all clean distclean
 	

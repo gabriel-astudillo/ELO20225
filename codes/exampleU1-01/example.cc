@@ -1,16 +1,16 @@
-#include <iostream>
-#include <sys/types.h>
-#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 int main(int argc, char* argv[]) {
-    pid_t miPID = getpid();
-    std::cout << "Hola. PID=" << miPID << "\n";
-      
-    fork();
-    fork();
-    fork();
+    
+    float  temperatura = -25.6;
+    int16_t nivel = 90;
 
-    std::cout << "Al final. PID=" << miPID << "\n";
+    char mensaje[] = "Hola mundo!!!!";
+
+    printf("La temperatura es %f y el nivel es %i, %s\n", temperatura, nivel, mensaje);
+
 
     exit(EXIT_SUCCESS);
 }
