@@ -1,9 +1,8 @@
+TARGET=example
+
 CC=gcc
 CXX=g++
 RM=rm -f
-
-TARGET=example
-
 
 INCLUDES=-I./include 
 LDFLAGS=-L/usr/local/lib 
@@ -31,6 +30,8 @@ clean:
 	@$(RM) $(TARGET)
 	@$(RM) -rf  $(DIR_OBJ)
 
+# Entrada para actualizar el repositorio.
+# Primero elimina archivos temporales y ejecutable
 push: clean
 	git add .
 	git commit -m 'update'
