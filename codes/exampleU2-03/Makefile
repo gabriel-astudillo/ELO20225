@@ -1,7 +1,7 @@
 TARGET=example
 
 CC=gcc
-CXX=g++
+CXX=gcc
 RM=rm -f
 
 INCLUDES=-I./include 
