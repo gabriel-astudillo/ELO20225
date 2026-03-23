@@ -18,7 +18,7 @@ int main(int argc, char* argv[]) {
 
     printf("varExample01\n");
     printf("Contenido mostrado como caracter: %c\n", varExample01);
-    printf("Contenidf mostrado como entero  : %i\n", varExample01);
+    printf("Contenido mostrado como entero  : %i\n", varExample01);
     printf("Tamaño en memoria               : %i Bytes\n", size_varExample01);
     printf("\n");
     printf("varExample02\n");
