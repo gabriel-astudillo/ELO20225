@@ -1,4 +1,4 @@
-TARGET=example
+TARGET=ejercicios_guia
 
 CC=gcc
 CXX=g++
