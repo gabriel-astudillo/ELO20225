@@ -48,7 +48,7 @@ int main(int argc, char* argv[]) {
 
     // Mostrar los resultados
     for (int i = 0; i < NUM_SENSORES; i++) {
-        printf("Sensor %i: %i [mV]\n", i, sensores[i]);
+        printf("Sensor %i: %i [mV]\n", i, sensores[i]); 
     }
 
     //usarSensores(sensores, INIT);
