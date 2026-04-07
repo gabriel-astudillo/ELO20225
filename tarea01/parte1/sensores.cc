@@ -6,9 +6,7 @@
 const int NUM_SENSORES = 10;
 
 enum Accion {
-    INIT = 0,
-    READ = 1,
-    SHOW = 2
+    //Completar código
 };
 
 double lecturaSensor(){
@@ -28,21 +26,7 @@ Entradas:
 */
 void usarSensores(int sensores[], Accion acc) {
     switch(acc){
-        case INIT:
-            for (int i = 0; i < NUM_SENSORES; i++) {
-                sensores[i] = 0;
-            }
-            break;
-        case READ:
-            for (int i = 0; i < NUM_SENSORES; i++) {
-                sensores[i] = lecturaSensor();
-            }
-            break;
-        case SHOW:
-            for (int i = 0; i < NUM_SENSORES; i++) {
-                printf("Sensor %i: %i [mV]\n", i, sensores[i]);
-            }
-            break;
+        // Completar código
         default:  break;
     }
 }
@@ -51,9 +35,6 @@ int main(int argc, char* argv[]) {
     srand(time(NULL));
 
     int sensores[NUM_SENSORES];
-
-    usarSensores(sensores, INIT);
-
 
     // Inicializar los sensores
     for (int i = 0; i < NUM_SENSORES; i++) {
@@ -70,11 +51,9 @@ int main(int argc, char* argv[]) {
         printf("Sensor %i: %i [mV]\n", i, sensores[i]);
     }
 
-    usarSensores(sensores, INIT);
+    //usarSensores(sensores, INIT);
     //usarSensores(sensores, READ);
-    usarSensores(sensores, SHOW);
-
-
+    //usarSensores(sensores, SHOW);
 
 
     exit(EXIT_SUCCESS);
