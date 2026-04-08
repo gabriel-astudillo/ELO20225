@@ -83,5 +83,5 @@ Una vez realizado la implementación anterior, deberá ejecutar 10 veces el prog
 | NEWLINE   	| 696.25  	| 796.95 	| ... 	| 876.59  	| 789.45   	| 2.34           	|
 
 
-En base a los datos agregados (promedio y desviación estándar), explique las diferencias que se obtienen entre los distintos casos.
+En base a los datos agregados (promedio y desviación estándar), explique las diferencias que se obtienen entre los distintos casos. Su informe debe tener toda la evidencia que permita demostrar el trabajo realizado.
 
