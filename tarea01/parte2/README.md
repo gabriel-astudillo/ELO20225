@@ -69,6 +69,8 @@ for(int t=0; t<10; i++){
 }
 ```
 
+Para evidenciar el trabajo de este hito, es necesario que en su informe presente y explique su implementación en base a un diagrama de flujo. Cada parte del código de la función implementada debe estar explicada tanto en el diagrama como en lenguaje natural.
+
 #### Hito 3
 
 Una vez realizado la implementación anterior, deberá ejecutar 10 veces el programa compilado, tabular los resultados y determinar promedios y desviación estándar de los tiempos obtenidos en cada caso. Un ejemplo de datos tabulados se muestra en la siguiente tabla.
