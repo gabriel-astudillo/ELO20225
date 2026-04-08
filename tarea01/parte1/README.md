@@ -47,3 +47,5 @@ int main(int argc, char* argv[]) {
 
 La ejecución del nuevo programa debe ser similar al original. Obviamente, sólo cambiarán los valores simulados ya que son aleatorios.
 
+Para evidenciar el trabajo de esta parte, es necesario que en su informe presente y explique su implementación en base a un diagrama de flujo. Cada parte del código de la función implementada debe estar explicada tanto en el diagrama como en lenguaje natural.
+
