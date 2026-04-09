@@ -1,0 +1,4 @@
+Memoria y direcciones de memoria
+Bloques de código.
+Ambito de variables.
+Conversión de datos.
