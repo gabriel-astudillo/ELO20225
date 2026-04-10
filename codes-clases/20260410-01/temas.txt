@@ -1,0 +1,15 @@
+√ Memoria y direcciones de memoria.
+√ Bloques de código.
+Ambito de variables y direcciones de memoria.
+√    Variables locales.
+    Funcionamiento de variables locales en ámbitos anidados.
+    Variables globales.
+Conversión de datos: 
+    Conversión implícita (coersión).
+    Conversión explícita (casting).
+√Funciones:
+√    Parámetros.
+√    Argumentos.
+    Paso de Argumentos por valor.
+    Paso de Argumentos por referencia.
+
