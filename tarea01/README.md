@@ -17,6 +17,6 @@ Para este trabajo, se utilizará VSCode como entorno de desarrollo. Se recomiend
 
 ## Pasos a seguir
 
-Clonar este repositorio en su computador local. Luego, leer las instrucciones de cada parte. Éstas están en archivos README.md en las carpetas respecticas de cada parte.
+Clonar este repositorio en su computador local. Luego, leer las instrucciones de cada parte. Éstas están en archivos README.md en las carpetas respectivas de cada parte.
 
 Los plazos de entrega, los entregables y las instrucciones para subir el producto de la tarea estarán especificados en el Aula Virtual en forma oportuna.
