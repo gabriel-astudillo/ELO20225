@@ -1,0 +1,15 @@
+@startuml if_then_else
+start
+if (voltaje > 5) then
+  :print HIGH VOLTAGE;
+  if (voltaje > 10) then
+    :print VERY HIGH VOLTAGE;
+  else 
+    :print NORMAL HIGH VOLTAGE;
+  endif
+else 
+:print LOW VOLTAGE;
+endif
+
+stop
+@enduml

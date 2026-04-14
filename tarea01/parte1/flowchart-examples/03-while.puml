@@ -1,0 +1,12 @@
+@startuml while
+
+start
+
+while (¿hay datos disponibles en el buffer?)
+  :lea los datos;
+  :generar diagramas temporales de los datos;
+endwhile
+
+stop
+
+@enduml

@@ -1,5 +1,5 @@
 # ELO20225 Tarea 1
-## Parte 1
+## Parte 2
 
 ### Objetivo
 

@@ -1,0 +1,15 @@
+@startuml switch_case
+start
+switch (accion)
+case ( READ)
+  :Instrucción 1;
+  :Instrucción 2;
+case ( WRITE ) 
+  :Instrucción 1;
+  :Instrucción 2;
+case ( SHOW)
+  :Instrucción 1;
+  :Instrucción 2;
+endswitch
+stop
+@enduml
