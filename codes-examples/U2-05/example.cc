@@ -32,6 +32,13 @@ int main(int argc, char* argv[]) {
 
     /*
         Direcciones de memoria en un arreglo
+        En un arreglo, se mantiene la idea que la variable es una etiqueta
+        de una dirección de memoria, la que es el inicio de un especio continuo
+        de registros de 1 Byte, cuya cantidad depende exclusivamente del tipo de
+        datos de la variable.
+        Esto significa, que el nombre del arreglo es también una dirección de memoria.
+        El tamaño delespacio continuo de datos depende no sólo del tipo de datos, si no 
+        que, además, de la cantidad total registros solicitados 
     */
     double arr0[] = {10.0, 20.0, 30.0, 40.0};
     printf("=== Tamaño del arreglo arr0 ===\n");
@@ -45,6 +52,18 @@ int main(int argc, char* argv[]) {
     printf("arr0[1]: %p\n", &arr0[1]);
     printf("arr0[2]: %p\n", &arr0[2]);
     printf("arr0[3]: %p\n", &arr0[3]);
+
+    // Una dirección de memoria de un elemento de un arreglo se puede guardar, como
+    // de costrumbre, en un puntero, ya que este tipo de variables almacenan direcciones
+    // de memoria.
+    double* prt_test = &arr0[2];
+
+    // Como se tiene la dirección del elemento 2 de arr0, entonces se puede modificar a través
+    // de ella:
+    *prt_test = 300.0;
+    printf("arr0[2]= %f\n", arr0[2]);
+
+    
 
 
     exit(EXIT_SUCCESS);
