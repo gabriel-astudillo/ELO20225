@@ -3,36 +3,65 @@
 #include <string.h> // strlen
 
 
+
+
+
+
 double f01(double a, double b)
 {
     double resultado;
-
-    printf("f01: &a=%p\n", &a);
-
     resultado = a + b;
+
     return resultado;
 }
 
-int main()
-{
+void f02(double a, double b, double* resultado){
+    *resultado = a + b;
+}
 
+void prueba01(){
     int a, b;
-    int resultado;
+    float resultado;
 
     a = 4;
     b = 5;
 
-     // Ejemplo: mostrar la dirección de memoria de la variable a:
-    printf("main: &a=%p\n", &a);
-
+    printf("=Antes de f01()=\n");
+    printf("main: a = %i\n", a);
+    printf("main: b = %i\n", b);
     resultado = f01(a, b);
-    printf("resultado f01()=%f\n", resultado);
+    printf("=Después de f01()=\n");
+    printf("main: a = %i\n", a);
+    printf("main: b = %i\n", b);
+    printf("resultado = %f\n", resultado);
+}
 
-    // Por ejemplo, la siguiente instrucción significa:
-    //      1) Guarde la dirección de la variable a en la variable ptr_a. Esto es factible
-    //         ya que ptr_a está definida como un puntero (a su izquierda está el símbolo *)
-    //      2) Esa dirección de memoria, hace referencia a un contenido que es un int (4 Bytes)
+void prueba02(){
+    int a = 10;
+    printf("&a = %p\n", &a);
+
     int* ptr_a = &a;
+    printf("ptr_a  = %p\n", ptr_a);
+    printf("*ptr_a = %i\n", *ptr_a);
+
+    *ptr_a = 51;
+    printf("a      = %i\n", a);
+    printf("*ptr_a = %i\n", *ptr_a);
+
+    int a0 = 20;
+    int b0 = 30;
+    double res;
+    f02(a0, b0, &res);
+
+    printf("res=%f\n", res);
+
+
+}
+
+int main()
+{
+    //prueba01();
+    prueba02();
 
     exit(EXIT_SUCCESS);
 }
