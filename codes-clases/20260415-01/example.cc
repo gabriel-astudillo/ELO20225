@@ -69,7 +69,7 @@ int main()
     // se debe especificar el tipo de dato respectivo.
     // Por ejemplo, la siguiente instrucción significa:
     //      1) Guarde la dirección de la variable a en la variable ptr_a. Esto es factible
-    //         ya que ptr_a definida como un puntero (a su izquierda está el símbolo *)
+    //         ya que ptr_a está definida como un puntero (a su izquierda está el símbolo *)
     //      2) Esa dirección de memoria, hace referencia a un contenido que es un int (4 Bytes)
     int* ptr_a = &a;
 
