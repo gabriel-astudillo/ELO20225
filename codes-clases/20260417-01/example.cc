@@ -88,7 +88,6 @@ void prueba03(){
 
     printf("res=%f\n", res);
 
-
 }
 
 int main()
