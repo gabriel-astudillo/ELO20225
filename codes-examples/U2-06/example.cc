@@ -3,8 +3,7 @@
 #include <string.h>
 #include <time.h>
 
-int main(int argc, char* argv[]) {
-    
+void casoConversion01(){
     int n0;
     int n1;
     float res0;
@@ -31,6 +30,31 @@ int main(int argc, char* argv[]) {
     res0 = n0 / (float)n1;
     printf("res0=%f\n", res0); // Muestra 3.33333
 
+}
+
+/*
+    Caso conversión de tipo de datos en forma implícita.
+    En este caso, se muestra la conversión implícita entre el contenido
+    de la variable 'a' y la variable de destino 'b'. 
+    Esta es una prueba de conversión de tipo de datos con pérdida de datos.
+    Lo anterior se debe a que la variable origen es un entero de 32 bits, 
+    que posee un cierto rango de representación numérica y la variable destino es un entero de 8 bits,
+    que tiene un rango menor de representación.
+*/
+void casoConcersion02(){
+    int32_t a;
+    int8_t b;
+
+    a = 49153;
+    b = a;
+
+    printf("a=%i\n", a);
+    printf("b=%i\n", b);
+
+    // Debe justificar el valor de la variable 'b'.
+}
+
+void casoConversion03(){
     /*
         Si se realiza la conversión entre, por ejemplo,
         un entero de 32 bits a un de 8 bits, se perderán
@@ -39,6 +63,9 @@ int main(int argc, char* argv[]) {
         tenga la variable orignal y el tipo de dato de la variable
         destino.
     */
+   int n0;
+   int n1;
+   
 
     //Caso pérdida visible
     n0 = 65535;
@@ -62,6 +89,13 @@ int main(int argc, char* argv[]) {
     printf("=== Caso pérdida oculta ===\n");
     printf("n0=%i\n", n0);
     printf("n1=%i\n", n1);
+}
+
+
+
+int main(int argc, char* argv[]) {
+    
+    casoConcersion02();
 
 
     exit(EXIT_SUCCESS);
