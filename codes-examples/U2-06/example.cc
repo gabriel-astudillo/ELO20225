@@ -89,13 +89,16 @@ void casoConversion03(){
     printf("=== Caso pérdida oculta ===\n");
     printf("n0=%i\n", n0);
     printf("n1=%i\n", n1);
+
+    uint32_t test01 = (uint8_t)0x0FAABBCC;
+    printf("test01=0x%X\n", test01);
 }
 
 
 
 int main(int argc, char* argv[]) {
     
-    casoConcersion02();
+    casoConversion03();
 
 
     exit(EXIT_SUCCESS);
