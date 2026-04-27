@@ -3,10 +3,6 @@
 #include <string.h> // strlen
 
 
-
-
-
-
 double f01(double a, double b)
 {
     double resultado;
