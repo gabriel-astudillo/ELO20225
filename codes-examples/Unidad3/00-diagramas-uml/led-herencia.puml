@@ -1,0 +1,39 @@
+@startuml
+
+skinparam classAttributeIconSize 0
+left to right direction
+class Led {
+    -pinLed: byte
+    -estadoLogico: enum{OFF, ON}
+
+    +Led()
+    +Led(pin: byte)
+    +encender(): void
+    +apagar(): void
+    }
+
+class LedIntermitente{
+    .. <b>atributos comunes a la clase Led</b> ..
+    -pinLed: byte
+    -estadoLogico: enum{OFF, ON}
+    .. <b>atributos propios</b> ..
+    -tiempoON: uint32_t
+    -tiempoOFF: uint32_t
+    --
+    +LedIntermitente()
+    +LedIntermitente(pin:byte)
+    .. <b>métodos comunes a la clase Led</b> ..
+    +encender(): void
+    +apagar(): void
+    .. <b>métodos propios</b> ..
+    +setTiempoON(tON: uint32_t): void
+    +setTiempoOFF(tOFF: uint32_t): void
+    +cicloIntermitente(): void
+
+}
+
+
+
+'Led <|--' LedIntermitente
+
+@enduml

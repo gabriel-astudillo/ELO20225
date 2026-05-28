@@ -1,0 +1,102 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+    class Motor {
+        -rpm: integer = 3000
+        -torque: float = 150
+        --
+        +Motor()
+        +Motor(rpm: integer, torque: float)
+        .. setters ..
+        ...
+        .. getters ..
+        ...
+    }
+
+    class Punto_ {
+        +x: float
+        +y: float
+        --
+        +init(x0: float, y0: float)
+
+        .. otros métodos ..
+
+    }
+
+     class Fecha {
+        -year: int
+        -month: int
+        +bazzinga: bool
+        -day: int
+        --
+        +init(year: int, month: int, day: int)
+        +obtenerPlazo(fechaInicio: Fecha, plazoEnDias: int): Fecha
+        -esFechaValida(year: int, month: int, day: int): bool
+        -diasEnMes(year: int, month: int): int
+    }
+
+
+    class Procesador_{
+        -cores: int
+        -cacheL3: int
+        -hwThreads: int
+        --
+        +init(c: int, cl: int, ht: int)
+        .. otros métodos ..
+    }
+
+
+    class Procesador{
+        -cores: int
+        -cacheL3: int
+        -hwThreads: int
+        --
+        +init(<font size="8" valign="center">parámetros adecuados</font>)
+
+
+        .. otros métodos ..
+    }
+
+
+    class Circulo {
+        - radio: double = 0.0
+        - PI: dobule = 3.1415926535
+        + Circulo()
+        + Circulo(radio: double)
+        + area(): double
+        + perimetro(): double
+        - 
+    }
+
+     class Punto {
+        -x: float
+        -y: float
+        --
+        +init(x: float, y: float)
+        .. otros métodos ..
+        <b>+setX(x: float): void</b>
+        .. otros métodos ..
+    }
+
+
+    class Complejo{
+        - real: float
+        - imaginario: float
+        --
+        +init(<font size="8" valign="center">parámetros adecuados</font>)
+
+
+        
+        .. otros métodos ..
+    }
+
+
+    class Mascota {
+        - nombre: string
+        - edad: int
+        - tipo: string
+        + Mascota(nombre: string, edad: int, tipo: string)
+        + getInfo(): string
+    }
+
+@enduml

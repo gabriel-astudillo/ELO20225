@@ -1,0 +1,26 @@
+@startuml
+
+skinparam classAttributeIconSize 0
+'left to right direction
+
+
+class B{
+    .. atributos ..
+
+    +B()
+}
+
+class A {
+    .. Atributos ..
+  --
+  .. Constructores..
+  + A()
+  + A(param01: tipo01)
+  .. Otros métodos ..
+  ...
+  ...
+}
+
+A <|-- B
+
+@enduml

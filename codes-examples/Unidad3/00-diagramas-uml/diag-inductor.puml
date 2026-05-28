@@ -1,0 +1,28 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+
+class Inductor{
+    -inductancia: double
+    -corrienteMaxima: double
+    -numeroVueltas: int
+
+    +Inductor(l: double, iMax: double, nVueltas: int)
+    +calcularReactancia(frec: double)
+    +setInductancia(l: double): void
+    +getInductancia(): double
+}
+
+class InductorNucleoAire{
+    -radioEspiral: double
+    -longitud: double
+    +InductorNucleoAire(rEspiral: double, longitud: double)
+    +calcularInductancia(): void
+}
+
+   
+
+Inductor <|-- InductorNucleoAire
+
+   
+@enduml
