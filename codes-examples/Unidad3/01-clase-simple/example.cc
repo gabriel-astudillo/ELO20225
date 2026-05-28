@@ -53,7 +53,7 @@ void mostrarAtributos(A* clase){
 int main(int argc, char* argv[]) {
     // Códigos de prueba de la clase A
 
-    // Prueba unitaria 1: 
+    // ***Prueba unitaria 1***
     //   Crear objeto de la clase A con 
     //   el constructor por omisión
     // Resultado esperado:
@@ -64,7 +64,7 @@ int main(int argc, char* argv[]) {
     mostrarAtributos(test01);
 
 
-    // Prueba unitaria 2: 
+    // ***Prueba unitaria 2***
     //   Crear objeto de la clase A con 
     //   el constructor con parámetros
     // Resultado esperado:
@@ -74,7 +74,7 @@ int main(int argc, char* argv[]) {
     A* test02 = new A(19, 74);
     mostrarAtributos(test02);
 
-    // Prueba unitaria 3:
+    // ***Prueba unitaria 3***
     //   Con el objeto test02, cambiar el valor del atributo a0
     // Resultado esperado:
     //   se debe observar un cambio en el valor sólo del atributo a0.
