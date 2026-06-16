@@ -1,0 +1,43 @@
+@startuml parte2
+
+skinparam classAttributeIconSize 0
+left to right direction
+
+
+class DisplayBase{
+    -matrix: ArduinoLEDMatrix;
+    -FILAS: const byte = 12;
+    -COLUMNAS: const byte = 8;
+    -frame: matriz de enteros [8x12]
+
+    +DisplayBase()
+    +clear(): void
+    +setPoint(x: int, y: int): void
+    +deletePoint(x: int, y: int): void
+    +randomPoint(): void
+    +update(): void
+    +getCols(): int
+    +getRows(): int
+}
+
+class ArduinoLEDMatrix {
+    
+    +ArduinoLEDMatrix()
+    +renderBitmap(frame: matriz, rows: int, cols: int): void
+
+}
+
+class Display{
+
+    +Display()
+    +line(x0: int, y0: int, x1: int, y1: int): void
+    +rect(x0: int, y0: int, ancho: int, alto: int): void
+    +triangle(x0: int, y0: int, x1: int, y1: int, x2: int, y2: int): void
+}
+
+
+DisplayBase *-- ArduinoLEDMatrix
+
+DisplayBase <|-- Display
+
+@enduml

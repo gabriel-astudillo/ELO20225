@@ -1,9 +1,9 @@
-# ELO20225 Tarea 2
+# ELO20225 Tarea X :(
 
 ## Objetivos
 
-* Implementar código orientado a objetos a partir de una solución monolítica. 
-* Crear firmware orientado a objetos para una placa de desarrollo ArduinoR4
+** Por definir **
+
 
 ## Descripción
 
@@ -11,7 +11,7 @@
 
 ## Materiales a utilizar
 
-Para este trabajo, se utilizará Thinkercad como entorno de simulación y VSCode como entorno de desarrollo. En forma similar a la tarea 1, se recomienda tener instalado algún plugin que permite visualizar archivos `Markdown`, además de los módulos para realizar compilación cruzada para la plataforma ArduinoR4.
+** Por definir  **
 
 ## Pasos a seguir
 
